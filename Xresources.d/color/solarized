@@ -1,0 +1,13 @@
+! solarized
+
+#define bg    #002b36
+#define fg    #fdf6e3
+#define blk   #073642
+#define bblk  #586e75
+#define red   #dc322f
+#define grn   #859900
+#define ylw   #b58900
+#define blu   #268bd2
+#define mag   #d33682
+#define cyn   #2aa198 
+#define wht   #fdf6e3

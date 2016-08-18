@@ -1,0 +1,7 @@
+Host camus-dropbear
+    HostName camus
+    HostKeyAlias camus-dropbear
+    User root
+    UserKnownHostsFile ~/.ssh/known_hosts.initramfs
+    IdentityFile ~/.ssh/camus_boot_id_rsa
+

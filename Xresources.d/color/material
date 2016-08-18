@@ -1,0 +1,13 @@
+! material
+
+#define bg    #212121
+#define fg    #fafafa
+#define blk   #212121
+#define bblk  #212121
+#define red   #ff1744
+#define grn   #c6ff00
+#define ylw   #ffea00
+#define blu   #2979ff
+#define mag   #7c4dff
+#define cyn   #00b0ff 
+#define wht   #fafafa
