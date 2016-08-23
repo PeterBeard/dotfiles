@@ -11,6 +11,6 @@ find * -maxdepth 1 -type d -print | while read f; do
 done
 
 # Files
-find * -maxdepth 1 -type f -not -name "*.sh" -not -name "README" -not -name "LICENSE" -print | while read f; do
-    rsync -v "$f" "$HOME/.${f#.}"
+find * -maxdepth 1 -type f -not -name "*.sh" -not -name "README.md" -not -name "LICENSE" -print | while read f; do
+    rsync -nv "$f" "$HOME/.${f#.}"
 done
