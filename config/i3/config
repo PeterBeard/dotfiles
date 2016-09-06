@@ -21,6 +21,7 @@ set $irc_client "urxvt -e irssi"
 set $unity "/opt/Unity/Editor/Unity"
 set $feed_reader "urxvt -e newsbeuter -r"
 set $password_manager "keepass2"
+set $mail_client "geary"
 
 gaps inner 20
 gaps outer 0
@@ -54,8 +55,10 @@ bindsym $mod+f exec --no-startup-id $file_browser
 
 # open a web browser
 bindsym $mod+b exec --no-startup-id $web_browser
-
 bindsym $mod+shift+b exec --no-startup-id $private_browser
+
+# open email client
+bindsym $mod+g exec --no-startup-id $mail_client
 
 # open the mpd client
 bindsym $mod+m exec --no-startup-id $mpd_client
@@ -187,6 +190,9 @@ exec dex -ae i3
 # start mpdscribble
 exec --no-startup-id mpdscribble
 
+# start GNOME keyring
+exec gnome-keyring-daemon -sd
+
 # start compton
 exec compton -b --mark-overdir-focused
 
@@ -202,7 +208,6 @@ workspace 9 output DVI-D-0
 workspace 0 output DVI-I-1
 workspace 2 output DVI-I-1
 workspace 4 output DVI-I-1
-workspace 1 output DVI-I-1
 workspace 6 output DVI-I-1
 workspace 8 output DVI-I-1
 
